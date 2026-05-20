@@ -1,0 +1,101 @@
+/* MEDIA QUERY FOR SECTION 1 Tablet view*/
+@media screen and (min-width: 900px) {
+  main {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  .sect_1 .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sect_2 {
+    width: 400px;
+    height: 50%;
+    margin-block: 40px;
+    margin-inline: 40px 0px;
+  }
+}
+
+/* MEDIA QUERY FOR SECTION 1 DESKTOP VIEW*/
+@media screen and (min-width: 1400px) {
+  .sect_1 .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .show_order {
+    padding: 30px;
+    width: 90%;
+    height: fit-content;
+    max-width: 500px;
+    max-height: 96vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: zoomIn 0.7s ease-out forwards;
+  }
+
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
+
+/* MEDIA QUERY FOR IMAGE CONTAINERS */
+/* @media screen and (min-width: 900px) {
+  .sect_1 .img_con {
+    width: 300px;
+    height: 287px;
+    border-radius: 10px;
+  }
+
+  .waffle_con .img_con {
+    background-image: url(./assets/images/image-waffle-desktop.jpg);
+  }
+
+  .Creme_con .img_con {
+    background-image: url(./assets/images/image-creme-brulee-desktop.jpg);
+  }
+
+  .Macaron_con .img_con {
+    background-image: url(./assets/images/image-macaron-desktop.jpg);
+  }
+
+  .Tiramisu_con .img_con {
+    background-image: url(./assets/images/image-tiramisu-desktop.jpg);
+  }
+
+  .Baklava_con .img_con {
+    background-image: url(./assets/images/image-baklava-desktop.jpg);
+  }
+
+  .Pie_con .img_con {
+    background-image: url(./assets/images/image-meringue-desktop.jpg);
+  }
+
+  .Cake_con .img_con {
+    background-image: url(./assets/images/image-cake-desktop.jpg);
+  }
+
+  .Brownie_con .img_con {
+    background-image: url(./assets/images/image-brownie-desktop.jpg);
+  }
+
+  .Panna_con .img_con {
+    background-image: url(./assets/images/image-panna-cotta-desktop.jpg);
+  }
+} */
